@@ -65,6 +65,7 @@ $(VERILOG_DIR)/$(DESIGN_NAME)_mod.v: $(VERILOG_DIR)/$(DESIGN_NAME).v
 	make do-verilog-canonicalize
 
 $(VERILOG_DIR)/$(DESIGN_NAME).v: $(XSCHEM_DIR)/$(DESIGN_NAME).sch
+	mkdir -p $(VERILOG_DIR)
 	make do-verilog-from-xschem
 
 $(RESULTS_DIR)/sg13g2.map:
