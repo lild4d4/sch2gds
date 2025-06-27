@@ -91,3 +91,8 @@ $(LVS_DIR)/$(DESIGN_NICKNAME)/$(DESIGN_NAME).lvsdb: $(NETLIST_DIR)/$(DESIGN_NICK
 $(NETLIST_DIR)/$(DESIGN_NICKNAME)/$(DESIGN_NAME).spice: 
 	do-extract-netlist
 
+
+clean: 
+	rm -rf $(WORK_HOME)/results/$(PLATFORM)/$(DESIGN_NICKNAME)
+	rm -rf $(WORK_HOME)/objects/$(PLATFORM)/$(DESIGN_NICKNAME)
+	rm -rf $(VERILOG_DIR)
