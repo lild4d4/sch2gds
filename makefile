@@ -68,6 +68,7 @@ $(VERILOG_DIR)/$(DESIGN_NAME).v: $(XSCHEM_DIR)/$(DESIGN_NAME).sch
 	make do-verilog-from-xschem
 
 $(RESULTS_DIR)/sg13g2.map:
+	mkdir -p $(RESULTS_DIR)
 	cp $(ORFS_ROOT)/flow/platforms/$(PDK)/sg13g2.map $(RESULTS_DIR)/sg13g2.map
 
 .PHONY: lvs
