@@ -34,7 +34,7 @@ sch2gds: final/gds/$(DESIGN_NAME).gds
 
 .PHONY: do-librelane
 do-librelane:
-	librelane config.json --run-tag sch2gds --overwrite
+	PDK_ROOT=$(PDK_ROOT) PDK=$(PDK) librelane config.json --run-tag sch2gds --overwrite --manual-pdk
 	cp -r runs/sch2gds/final .
 
 .PHONY: do-verilog-canonicalize
