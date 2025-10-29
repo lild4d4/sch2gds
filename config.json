@@ -1,8 +1,9 @@
 {
   "DESIGN_NAME": "DB",
-  "VERILOG_FILES": "dir::verilog/Digital_Block/DB.v",
+  "VERILOG_FILES": "dir::verilog/Digital_Block/DB_mod.v",
   "CLOCK_PORT": "clk",
   "CLOCK_PERIOD": 100,
+  "PDN_CFG": "dir::scripts/pdn.tcl",
 
   "FP_SIZING": "absolute",
   "DIE_AREA":  [   0.00,   0.00, 200.00, 200.00],   
