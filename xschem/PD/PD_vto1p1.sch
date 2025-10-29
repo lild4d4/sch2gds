@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -290 0 -220 0 {
 lab=#net1}
@@ -64,5 +64,5 @@ C {devices/lab_pin.sym} -420 -220 0 1 {name=p3 sig_type=std_logic lab=VFE1}
 C {devices/lab_pin.sym} -400 30 0 1 {name=p6 sig_type=std_logic lab=VFE1}
 C {devices/iopin.sym} -830 -120 2 0 {name=p7 lab=VINS}
 C {devices/iopin.sym} -830 -40 2 0 {name=p8 lab=VINR}
-C {../SPG/SPG_vto1p1.sym} -560 -200 0 0 {name=x4}
-C {../SPG/SPG_vto1p1.sym} -550 50 0 0 {name=x2}
+C {xschem/SPG/SPG_vto1p1.sym} -560 -200 0 0 {name=x4}
+C {xschem/SPG/SPG_vto1p1.sym} -550 50 0 0 {name=x2}

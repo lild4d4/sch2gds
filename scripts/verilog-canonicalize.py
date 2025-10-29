@@ -1,15 +1,16 @@
 import sys
 # name = sys.argv[1]
 
-f = open(sys.argv[1], "r")
-fmod = open(sys.argv[2], "w")
+verilog_file = open(sys.argv[1], "r")
+verilog_file_output = open(sys.argv[2], "w")
+power_pin = sys.argv[3]
+ground_pin = sys.argv[4]
 
-for line in f:
-    if line.find("VCC") != -1:
-        print("found")
-    elif line.find("VSS") != -1:
-        print("found")
-    elif line[:7] == "sg13g2_":
-        fmod.write(line[7:])
+
+for line in verilog_file:
+    if line.find(power_pin) != -1:
+    	continue
+    elif line.find(ground_pin) != -1:
+    	continue
     else:
-        fmod.write(line)
+        verilog_file_output.write(line)

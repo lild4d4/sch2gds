@@ -1,7 +1,9 @@
-include $(DESIGN_CONFIG)
+export DESIGN_NICKNAME=Digital_Block
+export DESIGN_NAME=DB
+export DESIGN_HOME=$(shell pwd)
 
 export XSCHEM_DIR = xschem/$(DESIGN_NICKNAME)
-export VERILOG_DIR = $(DESIGN_HOME)/src/$(DESIGN_NICKNAME)
+export VERILOG_DIR = $(DESIGN_HOME)/verilog/$(DESIGN_NICKNAME)
 export SCRIPTS_DIR = scripts
 export GDS_DIR = klayout/gds/$(DESIGN_NICKNAME)
 export LVS_DIR = klayout/lvs/$(DESIGN_NICKNAME)
@@ -10,7 +12,7 @@ export NETLIST_DIR = netlist
 export XSCHEM_ARGS = -n -r -x -q
 export XSCHEM_RCFILE = --rcfile $(PDK_ROOT)/$(PDK)/libs.tech/xschem/xschemrc
 
-export RESULTS_DIR = $(WORK_HOME)/results/$(PLATFORM)/$(DESIGN_NICKNAME)/base
+export RESULTS_DIR = $(DESIGN_HOME)/results/$(DESIGN_NICKNAME)
 
 .PHONY: all
 all: sch2gds
@@ -42,15 +44,17 @@ do-openroad:
 .PHONY: do-yosys-canonicalize
 do-yosys-canonicalize:
 	mkdir -p $(RESULTS_DIR)
-	yosys -v -c $(SCRIPTS_DIR)/yosys-canonicalize.tcl
+	yosys -c $(SCRIPTS_DIR)/yosys-canonicalize.tcl
 
 .PHONY: do-verilog-canonicalize
 do-verilog-canonicalize:
-	python3 $(SCRIPTS_DIR)/verilog-canonicalize.py $(VERILOG_DIR)/$(DESIGN_NAME).v $(VERILOG_DIR)/$(DESIGN_NAME)_mod.v
+	python3 $(SCRIPTS_DIR)/verilog-canonicalize.py $(VERILOG_DIR)/$(DESIGN_NAME).v $(VERILOG_DIR)/$(DESIGN_NAME)_mod.v "VCC" "VSS"
 
 .PHONY: do-verilog-from-xschem
 do-verilog-from-xschem:
+	mkdir -p $(VERILOG_DIR)
 	xschem $(XSCHEM_ARGS) -w $(XSCHEM_RCFILE) -o $(VERILOG_DIR) $(XSCHEM_DIR)/$(DESIGN_NAME).sch
+	
 
 $(GDS_DIR)/$(DESIGN_NICKNAME)/$(DESIGN_NAME).gds: $(RESULTS_DIR)/6_final.def
 	make do-gds

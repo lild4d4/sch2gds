@@ -1,0 +1,32 @@
+{
+  "DESIGN_NAME": "DB",
+  "VERILOG_FILES": "dir::verilog/Digital_Block/DB.v",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 100,
+
+  "FP_SIZING": "absolute",
+  "DIE_AREA":  [   0.00,   0.00, 200.00, 200.00],   
+  "CORE_AREA": [ 50, 50, 150, 150],
+
+  "VDD_NETS": ["VDD"],    
+  "GND_NETS": ["VSS"],
+
+  "SYNTH_DIRECT_WIRE_BUFFERING": false,
+  "PL_TIME_DRIVEN": false,
+
+  "meta": {
+    "version": 2,
+    "flow": "Classic",
+    "substituting_steps": {
+        "Checker.YosysSynthChecks": null,
+        "Checker.DisconnectedPins": null,
+        "Klayout.DRC": null,
+        "Magic.DRC": null,
+        "Netgen.LVS": null,
+        "Checker.PowerGridViolations": null,
+        "OpenROAD.FillInsertion": null,
+        "OpenROAD.RepairDesignPostGPL": null
+        }
+    }
+
+}

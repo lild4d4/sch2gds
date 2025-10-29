@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 T {NON-OVERLAP CIRCUIT
 VSEL_NOL = 0 --> DelayTT ~ 2ns
@@ -123,23 +123,23 @@ C {devices/lab_pin.sym} 1280 -560 0 0 {name=p10 sig_type=std_logic lab=B2}
 C {devices/lab_pin.sym} 420 -560 0 0 {name=p12 sig_type=std_logic lab=C1}
 C {devices/lab_pin.sym} 420 -340 0 0 {name=p13 sig_type=std_logic lab=C2}
 C {devices/lab_pin.sym} 280 -570 0 0 {name=p14 sig_type=std_logic lab=A1}
-C {../large_delay/large_delay_vto1p1.sym} 930 -520 0 0 {name=x10}
-C {../large_delay/large_delay_vto1p1.sym} 930 -380 0 0 {name=x4}
+C {xschem/large_delay/large_delay_vto1p1.sym} 930 -520 0 0 {name=x10}
+C {xschem/large_delay/large_delay_vto1p1.sym} 930 -380 0 0 {name=x4}
 C {sg13g2_stdcells/sg13g2_mux2_2.sym} 1170 -540 0 0 {name=x11 VDD=VCC VSS=VSS prefix=sg13g2_ }
 C {devices/lab_pin.sym} 970 -680 0 0 {name=p15 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 990 -600 0 0 {name=p16 sig_type=std_logic lab=VSS}
-C {../large_delay/large_delay_vto1p1.sym} 930 -640 0 0 {name=x12}
+C {xschem/large_delay/large_delay_vto1p1.sym} 930 -640 0 0 {name=x12}
 C {devices/lab_pin.sym} 630 -680 0 0 {name=p17 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 650 -600 0 0 {name=p18 sig_type=std_logic lab=VSS}
-C {../large_delay/large_delay_vto1p1.sym} 590 -640 0 0 {name=x13}
+C {xschem/large_delay/large_delay_vto1p1.sym} 590 -640 0 0 {name=x13}
 C {devices/iopin.sym} 140 -700 2 0 {name=p19 lab=VSEL_NOL}
 C {devices/lab_pin.sym} 1130 -480 0 0 {name=p20 sig_type=std_logic lab=VSEL_NOL}
 C {sg13g2_stdcells/sg13g2_mux2_2.sym} 1170 -360 0 0 {name=x14 VDD=VCC VSS=VSS prefix=sg13g2_ }
 C {devices/lab_pin.sym} 960 -300 0 0 {name=p21 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 980 -220 0 0 {name=p22 sig_type=std_logic lab=VSS}
-C {../large_delay/large_delay_vto1p1.sym} 920 -260 0 0 {name=x15}
+C {xschem/large_delay/large_delay_vto1p1.sym} 920 -260 0 0 {name=x15}
 C {devices/lab_pin.sym} 630 -300 0 0 {name=p23 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 650 -220 0 0 {name=p24 sig_type=std_logic lab=VSS}
-C {../large_delay/large_delay_vto1p1.sym} 590 -260 0 0 {name=x16}
+C {xschem/large_delay/large_delay_vto1p1.sym} 590 -260 0 0 {name=x16}
 C {devices/lab_pin.sym} 1260 -350 0 0 {name=p25 sig_type=std_logic lab=B1}
 C {devices/lab_pin.sym} 1130 -300 0 0 {name=p11 sig_type=std_logic lab=VSEL_NOL}

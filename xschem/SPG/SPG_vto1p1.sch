@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 L 4 160 -560 160 -360 {}
 L 4 860 -560 860 -360 {}
@@ -62,4 +62,4 @@ C {sg13g2_stdcells/sg13g2_inv_2.sym} 250 -420 0 0 {name=x5 VDD=VCC VSS=VSS prefi
 C {sg13g2_stdcells/sg13g2_inv_8.sym} 470 -420 0 0 {name=x6 VDD=VCC VSS=VSS prefix=sg13g2_ }
 C {sg13g2_stdcells/sg13g2_and2_2.sym} 710 -500 0 0 {name=x7 VDD=VCC VSS=VSS prefix=sg13g2_ }
 C {sg13g2_stdcells/sg13g2_and2_2.sym} 710 -400 0 0 {name=x8 VDD=VCC VSS=VSS prefix=sg13g2_ }
-C {../large_delay/large_delay_vto1p1.sym} 480 -160 0 0 {name=x9}
+C {xschem/large_delay/large_delay_vto1p1.sym} 480 -160 0 0 {name=x9}

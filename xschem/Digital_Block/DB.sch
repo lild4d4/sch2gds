@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 T {VSEL_OL = 0 --> Closed loop
 VSEL_OL = 1 --> Open loop} -620 -10 0 0 0.5 0.5 {}
@@ -101,12 +101,12 @@ C {devices/iopin.sym} 810 -100 0 0 {name=p9 lab=NOC_P}
 C {devices/iopin.sym} 810 100 0 0 {name=p10 lab=NOC_N
 }
 C {devices/lab_pin.sym} 180 -120 0 0 {name=p14 sig_type=std_logic lab=PD_OUT}
-C {../PD/PD_vto1p1.sym} 20 0 0 0 {name=x3}
-C {../BUFFLV/BUFFLV_vto1p1.sym} -380 -110 0 0 {name=X1}
-C {../BUFFLV/BUFFLV_vto1p1.sym} -380 210 0 0 {name=X2}
-C {../BUFFLV/BUFFLV_vto1p1.sym} 250 -210 0 0 {name=X5}
-C {../BUFFLV/BUFFLV_vto1p1.sym} 830 -200 0 0 {name=X6}
-C {../BUFFLV/BUFFLV_vto1p1.sym} 830 260 0 0 {name=X7}
+C {xschem/PD/PD_vto1p1.sym} 20 0 0 0 {name=x3}
+C {xschem/BUFFLV/BUFFLV_vto1p1.sym} -380 -110 0 0 {name=X1}
+C {xschem/BUFFLV/BUFFLV_vto1p1.sym} -380 210 0 0 {name=X2}
+C {xschem/BUFFLV/BUFFLV_vto1p1.sym} 250 -210 0 0 {name=X5}
+C {xschem/BUFFLV/BUFFLV_vto1p1.sym} 830 -200 0 0 {name=X6}
+C {xschem/BUFFLV/BUFFLV_vto1p1.sym} 830 260 0 0 {name=X7}
 C {devices/iopin.sym} -210 -150 0 0 {name=p12 lab=VINS_BUFF}
 C {devices/iopin.sym} -230 170 0 0 {name=p13 lab=VINR_BUFF}
 C {devices/iopin.sym} 420 -250 0 0 {name=p15 lab=PD_BUFF}
@@ -133,6 +133,6 @@ C {devices/lab_pin.sym} 690 -80 0 0 {name=p34 sig_type=std_logic lab=VINS_OL}
 C {devices/lab_pin.sym} 690 120 0 0 {name=p35 sig_type=std_logic lab=VINR_OL}
 C {devices/lab_pin.sym} 690 -40 0 0 {name=p36 sig_type=std_logic lab=VSEL_OL}
 C {devices/lab_pin.sym} 690 160 0 0 {name=p37 sig_type=std_logic lab=VSEL_OL}
-C {../NOL/NOL2DT_vto1p1.sym} 350 0 0 0 {name=x10}
+C {xschem/NOL/NOL2DT_vto1p1.sym} 350 0 0 0 {name=x10}
 C {devices/iopin.sym} -680 130 2 0 {name=p38 lab=VSEL_DT}
 C {devices/lab_pin.sym} 300 -80 0 0 {name=p39 sig_type=std_logic lab=VSEL_DT}
